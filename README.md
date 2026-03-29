@@ -68,7 +68,7 @@ print(result)  # (0.5, -2.0)
 
 ## Dikkat Edilmesi Gerekenler
 
-- `a` değeri **0 olmamalıdır**; aksi hâlde sıfıra bölme hatası (`ZeroDivisionError`) oluşur.
+- `a` değeri **0 olmamalıdır**. Fonksiyon bu durumu kendi içinde kontrol etmez; `a=0` geçirilirse Python `ZeroDivisionError` fırlatır. Bu doğrulama **çağıran koda** aittir.
 - Fonksiyon yalnızca **gerçel** kökleri hesaplar; **karmaşık** (complex) kökleri desteklememektedir.
 - Çift kök durumunda (`d == 0`) her iki tuple elemanı da aynı değeri taşır.
 
